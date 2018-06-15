@@ -12,4 +12,7 @@ class MusicImporter
     }
   end
 
+  def imports
+    Song.create_from_filename
+  end
 end
