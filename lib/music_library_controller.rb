@@ -8,6 +8,7 @@ class MusicLibraryController
   end
 
   def call
+    input = gets.chomp
 
     while input != "exit"
       puts "Welcome to your music library!"
@@ -21,7 +22,6 @@ class MusicLibraryController
       puts "What would you like to do?"
     end
 
-    input = gets.chomp
 
     #
     # if input == "list songs"
