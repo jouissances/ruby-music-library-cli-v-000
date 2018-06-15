@@ -85,10 +85,11 @@ class MusicLibraryController
       song = Song.all.sort { |x, y|
         x.name <=> y.name
       }[input - 1]
+
+      if song != nil
+        puts "Playing #{song.name} by #{song.artist.name}"
+      end
     end
 
-    if song != nil
-      puts "Playing #{song.name} by #{song.artist.name}"
-    end
   end
 end
