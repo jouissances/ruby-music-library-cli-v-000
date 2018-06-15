@@ -60,6 +60,6 @@ class MusicLibraryController
       }.each.with_index(1) { |val, i|
         puts "#{i}. #{val.name}"
       }
-
+    end
   end
 end
