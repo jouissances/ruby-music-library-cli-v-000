@@ -20,18 +20,22 @@ class MusicLibraryController
 
     input = gets.chomp
 
-    if input == "list songs"
-      list_songs
-    elsif input == "list artists"
-      list_artists
-    elsif input == "list genres"
-      list_genres
-    elsif input == "list artist"
-      list_artist
-    elsif input == "list genre"
-      list_genre
-    elsif input == "play song"
-      play_song
+    while input != "exit"
+      call
     end
+    # 
+    # if input == "list songs"
+    #   list_songs
+    # elsif input == "list artists"
+    #   list_artists
+    # elsif input == "list genres"
+    #   list_genres
+    # elsif input == "list artist"
+    #   list_artist
+    # elsif input == "list genre"
+    #   list_genre
+    # elsif input == "play song"
+    #   play_song
+    # end
   end
 end
