@@ -28,10 +28,6 @@ class Artist
     self.class.all << self
   end
 
-  def songs
-    @songs
-  end
-
   def genres
     @songs.map { |x|
       x.genre
