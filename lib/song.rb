@@ -50,11 +50,11 @@ class Song
   end
 
   def self.find_by_name(name)
-    all.detect{ |x| x.name == name }
+    self.all.detect{ |x| x.name == name }
   end
 
   def self.find_or_create_by_name(name)
-    find_by_name(name) || create(name)
+    self.find_by_name(name) || create(name)
   end
 
   def save
