@@ -23,22 +23,12 @@ class MusicLibraryController
 
       input = gets.chomp
 
-      
     end
+  end
 
-    #
-    # if input == "list songs"
-    #   list_songs
-    # elsif input == "list artists"
-    #   list_artists
-    # elsif input == "list genres"
-    #   list_genres
-    # elsif input == "list artist"
-    #   list_artist
-    # elsif input == "list genre"
-    #   list_genre
-    # elsif input == "play song"
-    #   play_song
-    # end
+  def list_songs
+    Song.all.sort { |x, y| 
+      (x <=> y)
+    }
   end
 end
