@@ -56,6 +56,8 @@ class MusicLibraryController
 
     Artist.all.find { |x|
       x.name == input
+    }.songs.each.with_index(1) { |val, i|
+        puts "#{i}. #{val.name}"
     }
   end
 end
