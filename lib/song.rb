@@ -45,6 +45,10 @@ class Song
     self.new(song_name, artist, genre)
   end
 
+  def self.create_from_filename(filename)
+    self.new_from_filename.save
+  end
+
   def self.find_by_name(name)
     all.detect{ |x| x.name == name }
   end
