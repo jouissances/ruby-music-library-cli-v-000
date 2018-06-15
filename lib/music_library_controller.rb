@@ -49,4 +49,12 @@ class MusicLibraryController
       puts "#{i}. #{val.name}"
     }
   end
+
+  def list_songs_by_artist
+    artist = gets.chomp
+
+    Artist.all.find { |x|
+      x.name == artist
+    }.songs
+  end
 end
