@@ -1,6 +1,6 @@
 class MusicLibraryController
 
-  attr_accessor :path
+  attr_accessor :path, :songs
 
   def initialize(path = './db/mp3s')
     @path = path
@@ -59,6 +59,6 @@ class MusicLibraryController
     }.each.with_index(1) { |val, i|
       puts "#{i}. #{val.name}"
     }
-    
+
   end
 end
