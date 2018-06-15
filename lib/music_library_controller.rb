@@ -51,10 +51,10 @@ class MusicLibraryController
   end
 
   def list_songs_by_artist
-    artist = gets.chomp
+    input = gets.chomp
 
     Artist.all.find { |x|
-      x.name == artist
+      x.name == input
     }.songs
   end
 end
