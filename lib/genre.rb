@@ -23,13 +23,13 @@ class Genre
   end
 
   def self.create(name)
-    genre = new(name)
-    genre.save
-    genre
+    self.new(name).tap { |x|
+      x.save
+    }
   end
 
   def artists
-    songs.map { |x| 
+    songs.map { |x|
       x.artist
     }.uniq
   end
