@@ -28,9 +28,9 @@ class MusicLibraryController
         list_songs
       when "list artists"
         list_artists
-      end input
-      
-      
+      end
+
+
     end
   end
 
