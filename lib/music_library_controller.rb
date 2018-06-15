@@ -81,7 +81,5 @@ class MusicLibraryController
     puts list_songs
 
     input = gets.chomp
-
-    
   end
 end
