@@ -39,9 +39,7 @@ class Song
     song_name = parts[1]
     genre_name = parts[2].gsub(".mp3", "")
 
-    Song.name = song_name
-    Artist.name = artist_name
-    Genre.name = genre_name
+    self.new(song_name, artist_name, genre_name)
   end
 
   def self.find_by_name(name)
