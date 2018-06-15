@@ -30,6 +30,8 @@ class Genre
   end
 
   def artists
-    songs.collect{ |s| s.artist }.uniq
+    songs.map { |x| 
+      x.artist 
+    }.uniq
   end
 end
