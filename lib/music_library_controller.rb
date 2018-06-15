@@ -55,6 +55,6 @@ class MusicLibraryController
 
     Artist.all.find { |x|
       x.name == input
-    }.songs
+    }
   end
 end
